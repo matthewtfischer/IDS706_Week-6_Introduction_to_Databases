@@ -1,0 +1,3 @@
+SELECT COUNT(*)
+FROM university_rankings
+WHERE country = 'Japan' AND year = 2013 AND world_rank <= 200;

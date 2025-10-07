@@ -1,0 +1,20 @@
+SELECT 
+	MAX(quality_of_education),
+	MIN(quality_of_education),
+	AVG(quality_of_education),
+	MAX(alumni_employment),
+	MIN(alumni_employment),
+	AVG(alumni_employment),
+	MAX(quality_of_faculty),
+	MIN(quality_of_faculty),
+	AVG(quality_of_faculty),
+	MAX(influence),
+	MIN(influence),
+	AVG(influence),
+    MAX(CASE WHEN year >= 2014 THEN broad_impact END),
+    MIN(CASE WHEN year >= 2014 THEN broad_impact END),
+    AVG(CASE WHEN year >= 2014 THEN broad_impact END),
+    MAX(score),
+	MIN(score),
+	AVG(score)
+FROM university_rankings
